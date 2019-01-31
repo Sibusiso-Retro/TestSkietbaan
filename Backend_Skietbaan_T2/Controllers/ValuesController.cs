@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,8 @@ namespace Backend_Skietbaan_T2.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            // return new string[] { "value1", "value2" };
+            return new string[] {"value1","value2" };
         }
 
         // GET api/values/5
@@ -28,6 +30,8 @@ namespace Backend_Skietbaan_T2.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+
+
         }
 
         // PUT api/values/5
